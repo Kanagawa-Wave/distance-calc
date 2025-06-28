@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
   res.render('index', { x: null, y: null, z: null, distance: null, error: null });
 });
 
-app.post('/distance', (req, res) => {
+app.post('/', (req, res) => {
   const { x, y, z } = req.body;
 
   const xi = parseFloat(x);
